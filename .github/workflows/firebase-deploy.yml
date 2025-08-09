@@ -1,9 +1,7 @@
-name: Firebase Deploy
-
-on:
-  push:
-    branches:
-      - main  # or your deploy branch
+- name: Set up Node.js
+  uses: actions/setup-node@v4
+  with:
+    node-version: '20'  # or use '22'
 
 jobs:
   build-and-deploy:
